@@ -4,11 +4,13 @@ This is an ejected and slightly modified create-react-app configuration to use w
 
 
 ## Install
+Go to your plugin or theme root (e.g localdisk:/xampp/htdocs/wordpress/wp-content/plugins/myplugin) 
 ```sh
 git clone git@github.com:owiekindisch/create-react-app-wordpress.git
 npm install
 npm start
 ```
+A more complexer way to start would be to create a fresh react project with [create-react-app](https://github.com/facebookincubator/create-react-app#getting-started) and [eject](https://github.com/facebookincubator/create-react-app#converting-to-a-custom-setup) it. After that you are able to change/replace the files manually. I personally don't understand this use case, but it is possible.
 
 
 ## Known Issues
