@@ -18,7 +18,7 @@ Related to this pull request [#1588](https://github.com/facebookincubator/create
 <br>
 
 ## Custom folder structure
-To use your custom folder structure, you can just edit `_config/paths.js` as follow. I recommend to specify relative paths with `resolveApp()`. It starts from the current working directory (project root).
+To use your custom folder structure, you can just edit `config/paths.js` as follow. I recommend to specify relative paths with `resolveApp()`. It starts from the current working directory (project root).
 
 Property | Description
 ------------ | -------------
@@ -36,5 +36,5 @@ publicUrl | URL to the `appPublic` static files. Specified in your packages.json
 ## Host & Port
 By default the http-proxy-middleware listening to `http://localhost:80`. If you have other host or port settings to load your WordPress project you can change that inside the `package.json` file at `proxy`.
 
-The webpack-dev-server itself listening to `http://localhost:3000` by default. To change this setting you need to change that in `_scripts/start.js`.
+The webpack-dev-server itself listening to `http://localhost:3000` by default. To change this setting you need to change that in `scripts/start.js`.
 <br>
