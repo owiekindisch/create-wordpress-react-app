@@ -18,6 +18,17 @@ You can embed your bundle.js now within WordPress. For example:<br>
 
 ## Known Issues
 Related to this pull request [#1588](https://github.com/facebookincubator/create-react-app/pull/1588) there is an issue that the websocket tries to connect to `http://localhost:80`(default) instead of `http://localhost:3000`(default). There is no fix for it yet so you need to change these two lines by yourself in `node_modules/react-dev-utils/webpackHotDevClient.js`.   
+```diff
+var connection = new SockJS(url.format({
+  protocol: window.location.protocol,
+- hostname: window.location.hostname,
++ hostname: process.env.HOST || window.location.hostname,
+- port: window.location.port,
++ port: process.env.PORT || window.location.port,
+  // Hardcoded in WebpackDevServer
+  pathname: '/sockjs-node'
+}));
+```
 <br>
 
 ## Custom folder structure
