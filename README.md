@@ -12,6 +12,9 @@ npm start
 ```
 A more complexer way to start would be to create a fresh react project with [create-react-app](https://github.com/facebookincubator/create-react-app#getting-started) and [eject](https://github.com/facebookincubator/create-react-app#converting-to-a-custom-setup) it. After that you are able to change/replace the files manually. I personally don't understand this use case, but it is possible.
 
+You can embed your bundle.js now within WordPress. For example:<br>
+`<?php wp_enqueue_script( 'myproject', plugin_url() . '/myproject/public/bundle.js', array(), '0.1.0', true ); ?>`
+
 
 ## Known Issues
 Related to this pull request [#1588](https://github.com/facebookincubator/create-react-app/pull/1588) there is an issue that the websocket tries to connect to `http://localhost:80`(default) instead of `http://localhost:3000`(default). There is no fix for it yet so you need to change these two lines by yourself in `node_modules/react-dev-utils/webpackHotDevClient.js`.   
