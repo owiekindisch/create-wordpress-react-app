@@ -1,5 +1,5 @@
 # Create React App WordPress Configuration
-This is a ejected and slightly modified create-react-app configuration to use within your local WordPress project (e.g. XAMPP). You could use this to create a react-based WordPress Plug-In or WordPress Theme.
+This is an ejected and slightly modified create-react-app configuration to use within your local WordPress project (e.g. XAMPP). You could use this to create a react-based WordPress Plug-In or WordPress Theme.
 <br>
 
 
