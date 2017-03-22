@@ -7,6 +7,7 @@ This is an ejected and slightly modified create-react-app configuration to use w
 ```sh
 git clone git@github.com:owiekindisch/create-react-app-wordpress.git
 npm install
+npm start
 ```
 
 
