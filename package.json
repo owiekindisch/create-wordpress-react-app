@@ -2,6 +2,7 @@
   "name": "myproject",
   "version": "0.1.0",
   "private": true,
+  "repository": "owiekindisch/create-react-app-wordpress",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
