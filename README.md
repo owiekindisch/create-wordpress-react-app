@@ -11,7 +11,7 @@ npm install
 
 
 ## Known Issues
-Due to this issue https://github.com/facebookincubator/create-react-app/pull/1588 the websocket tries to connect to `http://localhost:80` instead of `http://localhost:3000`. There is no fix for it yet so you need to change these two lines by yourself in `node_modules/react-dev-utils/webpackHotDevClient.js`.   
+Related to this pull request [#1588](https://github.com/facebookincubator/create-react-app/pull/1588) there is an issue that the websocket tries to connect to `http://localhost:80`(default) instead of `http://localhost:3000`(default). There is no fix for it yet so you need to change these two lines by yourself in `node_modules/react-dev-utils/webpackHotDevClient.js`.   
 <br>
 
 ## Custom folder structure
