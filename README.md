@@ -30,7 +30,7 @@ appSrc | Directory where webpack modules should start to process
 yarnLockFile | Path to yarn.lock
 testsSetup | Path to setupTests.js
 appNodeModules | Directory to node_modules
-publicUrl | URL to assume the build it is hosted at the specified homepage. Specify "homepage" within packages.json
+publicUrl | URL to the `appPublic` static files. Specified in your packages.json at "homepage". You should specify "homepage" if you import media files in your react code 
 
 
 ## Host & Port
